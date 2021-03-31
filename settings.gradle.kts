@@ -1,2 +1,2 @@
-rootProject.name = "paper-kotlin-kts-template"
+rootProject.name = "kspigot-gradle-template"
 

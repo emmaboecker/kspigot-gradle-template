@@ -1,0 +1,6 @@
+name: ExamplePlugin
+api-version: 1.16
+authors:
+  - You
+main: com.example.exampleplugin.ExamplePlugin
+version: @version@

@@ -1,16 +1,15 @@
 package org.example.exampleplugin
 
-import net.md_5.bungee.api.ChatColor
-import org.bukkit.Bukkit
-import org.bukkit.plugin.java.JavaPlugin
+import net.axay.kspigot.chat.KColors
+import net.axay.kspigot.main.KSpigot
+class ExamplePlugin : KSpigot() {
 
-class ExamplePlugin : JavaPlugin() {
-
-    override fun onEnable() {
-        Bukkit.getLogger().info(ChatColor.GREEN.toString() + "The Plugin was successfully enabled!")
+    override fun startup() {
+        logger.info("${KColors.GREEN}The Plugin was successfully enabled!")
     }
 
-    override fun onDisable() {
-        Bukkit.getLogger().info(ChatColor.RED.toString() + "The Plugin was disabled!")
+    override fun shutdown() {
+        logger.info("${KColors.RED}The Plugin was disabled!")
     }
+
 }

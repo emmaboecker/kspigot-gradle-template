@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm") version "1.5.0"
     id("com.github.johnrengelman.shadow") version "7.0.0"
-    id("com.github.gmazzo.buildconfig") version "2.0.2"
+    id("com.github.gmazzo.buildconfig") version "3.0.0"
 }
 
 group = "org.example"
@@ -23,7 +23,7 @@ dependencies {
     compileOnly("com.destroystokyo.paper", "paper-api", "$minecraft_version-R0.1-SNAPSHOT") // Only used on compile time because we have a PaperMC Server so we don't need it in the final jar
 
     // KSpigot dependency
-    implementation("net.axay", "kspigot", "1.16.26")
+    implementation("net.axay", "kspigot", "1.16.27")
 
     // You can add Dependencies here
     // For Example:

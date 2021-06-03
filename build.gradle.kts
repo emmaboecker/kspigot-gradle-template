@@ -23,7 +23,7 @@ dependencies {
     compileOnly("com.destroystokyo.paper", "paper-api", "$minecraft_version-R0.1-SNAPSHOT") // Only used on compile time because we have a PaperMC Server so we don't need it in the final jar
 
     // KSpigot dependency
-    implementation("net.axay", "kspigot", "1.16.27")
+    implementation("net.axay", "kspigot", "1.16.29")
 
     // You can add Dependencies here
     // For Example:

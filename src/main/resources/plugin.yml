@@ -5,4 +5,4 @@ authors:
 main: org.example.exampleplugin.ExamplePlugin
 version: 1.0.0
 libraries:
-  - "net.axay:kspigot:1.17.2"
+  - "net.axay:kspigot:1.17.4"

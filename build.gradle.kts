@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.5.20"
+    kotlin("jvm") version "1.5.31"
 }
 
 group = "org.example"
@@ -31,7 +31,8 @@ tasks {
             jvmTarget = "16"
         }
     }
-    withType<JavaCompile> {
-        options.release.set(16)
-    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_16
 }

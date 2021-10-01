@@ -31,7 +31,8 @@ tasks {
             jvmTarget = "16"
         }
     }
-    withType<JavaCompile> {
-        options.release.set(16)
-    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_16
 }

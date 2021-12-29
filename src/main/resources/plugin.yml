@@ -1,8 +1,8 @@
 name: ExamplePlugin
-api-version: 1.17
+api-version: 1.18
 authors:
   - You
 main: org.example.exampleplugin.ExamplePlugin
 version: 1.0.0
 libraries:
-  - "net.axay:kspigot:1.17.4"
+  - "net.axay:kspigot:1.18.0"

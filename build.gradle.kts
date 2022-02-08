@@ -18,7 +18,7 @@ dependencies {
     paperDevBundle("1.18.1-R0.1-SNAPSHOT")
 
     // KSpigot dependency
-    implementation("net.axay", "kspigot", "1.18.0")
+    implementation("net.axay:kspigot:1.18.0")
 }
 
 tasks {

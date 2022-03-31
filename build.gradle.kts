@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.6.10"
-    id("io.papermc.paperweight.userdev") version "1.3.4"
+    id("io.papermc.paperweight.userdev") version "1.3.5"
     id("net.minecrell.plugin-yml.bukkit") version "0.5.1"
 }
 
@@ -15,10 +15,10 @@ repositories {
 
 dependencies {
     // PaperMC Dependency
-    paperDevBundle("1.18.1-R0.1-SNAPSHOT")
+    paperDevBundle("1.18.2-R0.1-SNAPSHOT")
 
     // KSpigot dependency
-    implementation("net.axay:kspigot:1.18.0")
+    implementation("net.axay:kspigot:1.18.2")
 }
 
 tasks {
@@ -26,6 +26,9 @@ tasks {
         kotlinOptions {
             jvmTarget = "17"
         }
+    }
+    build {
+        dependsOn(reobfJar)
     }
 }
 
@@ -42,11 +45,6 @@ bukkit {
     main = "$group.exampleplugin.ExamplePlugin"
     version = getVersion().toString()
     libraries = listOf(
-        "net.axay:kspigot:1.18.0",
-        "org.jetbrains.kotlin:kotlin-stdlib:1.6.10",
-        "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0",
-        "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.0",
-        "com.mojang:brigadier:1.0.18",
-        "com.google.code.gson:gson:2.8.9",
+        "net.axay:kspigot:1.18.2",
     )
 }

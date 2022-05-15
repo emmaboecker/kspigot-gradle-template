@@ -29,6 +29,9 @@ tasks {
         }
     }
     build {
+    compileJava {
+        options.encoding = "UTF-8"
+    }
         dependsOn(reobfJar)
     }
 }

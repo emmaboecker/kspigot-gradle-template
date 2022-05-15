@@ -28,11 +28,11 @@ tasks {
             jvmTarget = "$javaVersion"
         }
     }
-    build {
     compileJava {
         options.encoding = "UTF-8"
         options.release.set(javaVersion)
     }
+    assemble {
         dependsOn(reobfJar)
     }
 }

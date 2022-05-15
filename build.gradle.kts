@@ -1,4 +1,4 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+val javaVersion = 17 // Minecraft 1.18 requires Java 17
 
 plugins {
     kotlin("jvm") version "1.6.21"
@@ -23,22 +23,20 @@ dependencies {
 }
 
 tasks {
-    withType<KotlinCompile> {
+    compileKotlin {
         kotlinOptions {
-            jvmTarget = "17"
+            jvmTarget = "$javaVersion"
         }
     }
     build {
     compileJava {
         options.encoding = "UTF-8"
+        options.release.set(javaVersion)
     }
         dependsOn(reobfJar)
     }
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_17
-}
 
 bukkit {
     name = "ExamplePlugin"

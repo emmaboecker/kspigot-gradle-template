@@ -2,8 +2,8 @@ val javaVersion = 17
 val kspigotVersion = "1.19.0"
 
 plugins {
-    kotlin("jvm") version "1.7.0"
-    id("io.papermc.paperweight.userdev") version "1.3.6"
+    kotlin("jvm") version "1.7.10"
+    id("io.papermc.paperweight.userdev") version "1.3.8"
     id("net.minecrell.plugin-yml.bukkit") version "0.5.1"
 }
 
@@ -26,7 +26,7 @@ tasks {
     compileKotlin {
         kotlinOptions {
             freeCompilerArgs = listOf(
-                "-Xjdk-release=17",
+                "-Xjdk-release=$javaVersion",
             )
             jvmTarget = "$javaVersion"
         }

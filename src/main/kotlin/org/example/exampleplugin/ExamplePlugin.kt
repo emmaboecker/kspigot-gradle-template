@@ -1,18 +1,35 @@
 package org.example.exampleplugin
 
+import net.axay.kspigot.chat.KColors
+import net.axay.kspigot.chat.literalText
 import net.axay.kspigot.main.KSpigot
 
 class ExamplePlugin : KSpigot() {
 
     override fun load() {
-        logger.info("The Plugin was loaded!")
+        componentLogger.info(
+            literalText {
+                text("The plugin was loaded!")
+                color = KColors.LIGHTBLUE
+            }
+        )
     }
 
     override fun startup() {
-        logger.info("The Plugin was enabled!")
+        componentLogger.info(
+            literalText {
+                text("The plugin was enabled!")
+                color = KColors.GREEN
+            }
+        )
     }
 
     override fun shutdown() {
-        logger.info("The Plugin was disabled!")
+        componentLogger.info(
+            literalText {
+                text("The plugin was disabled!")
+                color = KColors.RED
+            }
+        )
     }
 }

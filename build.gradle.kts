@@ -4,7 +4,8 @@ val kspigotVersion = "1.19.0"
 plugins {
     kotlin("jvm") version "1.7.10"
     id("io.papermc.paperweight.userdev") version "1.3.8"
-    id("net.minecrell.plugin-yml.bukkit") version "0.5.1"
+    id("net.minecrell.plugin-yml.bukkit") version "0.5.2"
+    id("xyz.jpenilla.run-paper") version "1.0.6"
 }
 
 group = "org.example"
@@ -16,7 +17,7 @@ repositories {
 
 dependencies {
     // PaperMC Dependency
-    paperDevBundle("1.19.1-R0.1-SNAPSHOT")
+    paperDevBundle("1.19.2-R0.1-SNAPSHOT")
 
     // KSpigot dependency
     implementation("net.axay", "kspigot", kspigotVersion)

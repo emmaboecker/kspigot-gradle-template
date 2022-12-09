@@ -5,7 +5,7 @@ plugins {
     kotlin("jvm") version "1.7.20"
     id("io.papermc.paperweight.userdev") version "1.3.8"
     id("net.minecrell.plugin-yml.bukkit") version "0.5.2"
-    id("xyz.jpenilla.run-paper") version "1.0.6"
+    id("xyz.jpenilla.run-paper") version "2.0.1"
 }
 
 group = "org.example"

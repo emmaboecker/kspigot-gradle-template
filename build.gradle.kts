@@ -3,7 +3,7 @@ val kspigotVersion = "1.19.0"
 
 plugins {
     kotlin("jvm") version "1.7.20"
-    id("io.papermc.paperweight.userdev") version "1.3.8"
+    id("io.papermc.paperweight.userdev") version "1.5.3"
     id("net.minecrell.plugin-yml.bukkit") version "0.5.2"
     id("xyz.jpenilla.run-paper") version "1.0.6"
 }

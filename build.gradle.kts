@@ -1,5 +1,5 @@
 val javaVersion = 17
-val kspigotVersion = "1.19.0"
+val kspigotVersion = "1.19.2"
 
 plugins {
     kotlin("jvm") version "1.7.20"
